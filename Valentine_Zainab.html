@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Säg ja tack</title>
+    <link rel="stylesheet" href="Valentine_Zainab.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>💕 Will you be my Valentine? 💕</h1>
+
+        <img 
+            src="file:///C:/Users/08shaahm/Documents/Webb%20f%C3%B6r%20zainab%20(Valentine)/IMG_0697.jpeg" 
+            alt="Our cute picture"
+            class="valentine-img"
+        >
+
+        <div class="button-group">
+            <a href="yes.html">
+                <button id="yesBtn">YES 💖</button>
+            </a>
+            <button id="noBtn">NO 😭</button>
+        </div>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById("yesBtn");
+        const noBtn = document.getElementById("noBtn");
+
+        let scale = 1;
+
+        noBtn.addEventListener("click", () => {
+            scale += 0.2;
+            yesBtn.style.transform = `scale(${scale})`;
+        });
+    </script>
+
+</body>
+</html>
